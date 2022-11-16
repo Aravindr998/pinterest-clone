@@ -1,0 +1,146 @@
+.navigation-bar{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 9999;
+}
+.pinterest-icon{
+  height: 18px;
+  padding: 0 10px;
+}
+.home-button, .today-button{
+  padding: 11px 12px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+.home-button{
+  background-color: black;
+  color: white;
+}
+.create-first-option{
+  display: none;
+}
+#create{
+  border: none;
+  width: 61px;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+#create:focus{
+  outline: none;
+}
+.dropdown-parent:hover .dropdown{
+  display: block;
+}
+.dropdown-parent{
+  position: relative;
+}
+.dropdown{
+  width: 130px;
+  padding: 7px;
+  border-radius: 13px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  position: absolute;
+  white-space: nowrap;
+  right: -35px;
+  top: 35px;
+  background-color: white;
+  display: none;
+}
+.option-1,.option-2{
+  background-color: white;
+  padding: 7px;
+  font-size: 13px;
+  border-radius: 5px;
+}
+.option-1:hover, .option-2:hover{
+  background-color: rgb(234, 234, 234);
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.search-box{
+  height: 30px;
+  flex: 1;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  background-image: url(Icon/search.png);
+  background-repeat: no-repeat;
+  background-size: 13px;
+  background-position: 10px 12.5px;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 18px;
+}
+.search-box::placeholder{
+  padding-left: 25px;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+}
+.search-box:focus{
+  outline-color: rgb(77, 175, 255);
+  outline-style: solid;
+  outline-width: 3px;
+  background-image: none;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notification-icon{
+  height: 22px;
+}
+.notification-button, .chat-button{
+  padding: 7px 9px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.notification-button:hover, .chat-button:hover{
+  background-color: rgb(228, 228, 228);
+}
+.chat-icon{
+  height: 20px;
+}
+.profile{
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-size: 8px;
+  padding: 4px 6.5px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 30px;
+}
+.profile-parent{
+  background-color: white;
+  padding: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.profile-parent:hover{
+  background-color: rgb(227, 227, 227);
+}
+.dropdown-icon{
+  width: 18px;
+  border-radius: 10px;
+  color: gray;
+  border: none;
+}
+.dropdown-icon:hover{
+  background-color: rgb(227, 227, 227);
+}

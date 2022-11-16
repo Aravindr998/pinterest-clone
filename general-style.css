@@ -1,0 +1,14 @@
+body{
+  font-family: 'Segoe UI', Helvetica, sans-serif; 
+  margin: 0;
+  padding-top: 65px;
+  padding-left: 30px;
+  padding-right: 17px;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+p{
+  margin: 0;
+}

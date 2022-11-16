@@ -1,0 +1,141 @@
+.main-contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@media(max-width: 500px){
+  .main-contents{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-right: 14px;
+}
+.pictures{
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  cursor: zoom-in;
+}
+.pictures:hover{
+  filter: brightness(50%);
+}
+.picture-dropdown{
+  display: none;
+}
+.picture-dropdown-parent{
+  border: none;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  background: none;
+  color: white;
+}
+.picture-parent{
+  position: relative;
+}
+.picture-child-top-left{
+  position: absolute;
+  top: 17px;
+  left: 7px;
+}
+.save-button{
+  padding: 12px 13px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d70f27;
+  color: white;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+.picture-child-top-right{
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+.link-button{
+  border-radius: 20px;
+  border: none;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px 7px;
+  white-space: nowrap;
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.picture-child-bottom-left{
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+}
+.upload-button{
+  padding: 3px 5px;
+  border-radius: 20px;
+  border: none;
+}
+.upload-icon{
+  width: 15px;
+}
+.picture-child-bottom-right-1{
+  position: absolute;
+  bottom: 13px;
+  right: 45px;
+}
+.ellipsis-icon{
+  width: 15px;
+  padding-top: 1px;
+}
+.ellipsis-button{
+  padding: 3px 5px;
+  border-radius: 20px;
+  border: none;
+}
+.picture-child-bottom-right-2{
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+}
+.picture-child-bottom-left, .picture-child-bottom-right-1,.picture-child-bottom-right-2, .picture-child-top-left,.picture-child-top-right{
+  display: none;
+}
+.picture-parent:hover .picture-child-bottom-left{
+  display: block;
+}
+.picture-parent:hover .picture-child-bottom-right-1{
+  display: block;
+}
+.picture-parent:hover .picture-child-bottom-right-2{
+  display: block;
+}
+.picture-parent:hover .picture-child-top-left{
+  display: block;
+}
+.picture-parent:hover .picture-child-top-right{
+  display: block;
+}
+.below-picture-text{
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+.profile-details{
+  display: flex;
+  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-size: 12px;
+  align-items: center;
+}
+.profile-picture{
+  width: 26px;
+  border-radius: 20px;
+}
+.profile-name{
+  margin-left: 5px;
+}
+.text-container{
+  margin-bottom: 24px;
+}
